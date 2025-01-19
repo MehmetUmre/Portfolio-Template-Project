@@ -86,3 +86,5 @@ function animateElements() {
 
 window.addEventListener('load', animateElements);
 /*----------[PO-11]-Hero Section------------*/
+/*----------[PO-3]-Featured Work Section------------*/
+/*----------[PO-3]-Featured Work Section------------*/

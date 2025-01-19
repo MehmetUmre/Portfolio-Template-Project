@@ -131,7 +131,6 @@ body {
 /*----------[PO-9]-Header-Components------------*/
 /*----------[PO-11]-Hero Section------------*/
 .portfolio-container {
-    font-family: 'Inter', sans-serif;
     background: #202020;
     color: white;
     padding: 40px;
@@ -278,3 +277,27 @@ body {
 }
 
 /*----------[PO-11]-Hero Section------------*/
+/*----------[PO-3]-Featured Work Section------------*/
+.featured-work-container{
+    background: #202020;
+    max-width: 1520px;
+    margin: 0 auto;
+}
+.featured-work-section{
+    padding-left: 40px ;
+}
+@media (max-width: 768px){
+    .featured-work-section{
+        max-width: 590px;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 480px){
+    .featured-work-section{
+        max-width: 330px;
+        margin: 0 auto;
+    }
+}
+
+
+/*----------[PO-3]-Featured Work Section------------*/
