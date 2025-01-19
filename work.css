@@ -137,7 +137,7 @@ body {
     width: 1520px;
     margin: 0 auto;
     position: relative;
-    left: 10.4%;
+    left: 10.1%;
 }
 @media(max-width:1440px){
     .header-image-container{
@@ -156,3 +156,118 @@ body {
     }
 }
 /*----------[PO-25]-Header-İmage-----------*/
+/*----------[PO-5]-Problem-Statement-Component-and-Covibe-Component-----------*/
+
+.covibe-wrapper {
+    background: #202020;
+    color: #fff;
+    padding: 40px;
+    position: relative;
+    bottom: 4px;
+    max-width: 1440px;
+    margin: 0 auto;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+.covibe-header {
+    margin-bottom: 40px;
+    
+}
+.covibe-header h1 {
+    margin-bottom: 10px;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+    color: #807e7e;
+    font-family: "Manrope", serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px; 
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    opacity: 0.7;
+}
+.covibe-header p {
+    margin: 0;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+    color: #DEDEDE;
+    font-family: "Manrope", serif;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 48px; 
+    letter-spacing: -0.5px;
+}
+.covibe-details {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.covibe-detail-item {
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+    color: #DEDEDE;
+    font-family: "Manrope", serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+.covibe-detail-item i {
+    margin-right: 10px;
+    font-size: 20px;
+}
+.covibe-detail-item span {
+    font-weight: 400;
+}
+.covibe-detail-item strong {
+    font-weight: 700;
+}
+.covibe-problem {
+    margin-bottom: 20px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+    position: relative;
+    top: 30px;
+}
+.covibe-problem h2 {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    color: #DEDEDE;
+    font-family: "Manrope", serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px; 
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+.covibe-problem p {
+    line-height: 1.4;
+    margin: 0;color: #DEDEDE;
+    font-family: "Manrope", serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 54px; 
+    letter-spacing: -0.5px;
+}
+@media(max-width:768px){
+    .covibe-details{
+        flex-wrap: wrap;
+        display: flex;
+        gap: 10px;
+    }
+    .covibe-detail-item{
+        display: flex;
+    }
+}
+
+/*----------[PO-5]-Problem-Statement-Component-and-Covibe-Component-----------*/
