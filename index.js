@@ -88,3 +88,45 @@ window.addEventListener('load', animateElements);
 /*----------[PO-11]-Hero Section------------*/
 /*----------[PO-3]-Featured Work Section------------*/
 /*----------[PO-3]-Featured Work Section------------*/
+/*----------[PO-2]-Visual Explorations Section------------*/
+const images = [
+    {
+        src: "assets/[PO-2]/image1.svg",
+    },
+    {
+        src: "assets/[PO-2]/image2.svg",
+    },
+    {
+        src: "assets/[PO-2]/image3.svg",
+    },
+    {
+        src: "assets/[PO-2]/image4.svg",
+    },
+    {
+        src: "assets/[PO-2]/image5.svg",
+    },
+    {
+        src: "assets/[PO-2]/image6.svg",
+    }
+];
+
+function createGridItems() {
+    const container = document.getElementById('grid-container');
+    images.forEach((image, index) => {
+        const gridItem = document.createElement('div');
+        gridItem.className = 'grid-item';
+        gridItem.style.animationDelay = `${index * 0.1}s`;
+
+        const img = document.createElement('img');
+        img.src = image.src;
+        img.alt = image.alt;
+        img.width = 400;
+        img.height = 400;
+
+        gridItem.appendChild(img);
+        container.appendChild(gridItem);
+    });
+}
+
+document.addEventListener('DOMContentLoaded', createGridItems);
+/*----------[PO-2]-Visual Explorations Section------------*/
