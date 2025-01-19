@@ -105,3 +105,22 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 1500);
 });
 /*----------[PO-5]-Problem-Statement-Component-and-Covibe-Component-----------*/
+/*----------[PO-8]-Prototype-Section-----------*/
+const data = {
+    headerText:"LAUNCH PROTOTYPE",
+    imageUrl: "assets/[PO-8]/image.svg",
+    imageAlt: "A long hallway with glass walls on both sides, a gray floor, and black light fixtures hanging from the ceiling. There is a lounge area with a white couch and blue pillows visible through the glass on the left.",
+  };
+
+  document.getElementById("banner-text").textContent = data.headerText;
+
+  const imageElement = document.getElementById("main-image");
+  imageElement.src = data.imageUrl;
+  imageElement.alt = data.imageAlt;
+
+  window.addEventListener("load", () => {
+    setTimeout(() => {
+      imageElement.classList.add("visible");
+    }, 500);
+  });
+/*----------[PO-8]-Prototype-Section-----------*/
