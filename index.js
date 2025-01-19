@@ -55,3 +55,34 @@ style.textContent = `
 `;
 document.head.appendChild(style);
 /*----------[PO-9]-Header-Components------------*/
+/*----------[PO-11]-Hero Section------------*/
+const data = {
+    name: "Your Name",
+    title: "A Product Designer",
+    city: "City",
+    description: "I help businesses and companies reach their goals by designing user-centric digital products & interactive experiences.",
+    email: "hi@yourname.com",
+    profileImage: "assets/[PO-11]/unsplash_XHVpWcr5grQ.svg"
+};
+
+document.getElementById('intro-heading').textContent = `Hi, I am ${data.name}`;
+document.getElementById('role-heading').textContent = data.title;
+document.getElementById('location-heading').textContent = `based in ${data.city}.`;
+document.getElementById('bio-description').textContent = data.description;
+document.getElementById('email-text').textContent = data.email;
+document.getElementById('email-link').href = `mailto:${data.email}`;
+document.getElementById('profile-img').src = data.profileImage;
+document.getElementById('profile-img').alt = `Profile picture of ${data.name}, a ${data.title.toLowerCase()} based in ${data.city}`;
+
+function animateElements() {
+    const elements = document.querySelectorAll('.portfolio-heading, .portfolio-description, .contact-button, .profile-picture');
+    elements.forEach((el, index) => {
+        setTimeout(() => {
+            el.style.opacity = '1';
+            el.style.transform = 'translateY(0) scale(1)';
+        }, index * 200);
+    });
+}
+
+window.addEventListener('load', animateElements);
+/*----------[PO-11]-Hero Section------------*/
