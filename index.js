@@ -130,3 +130,39 @@ function createGridItems() {
 
 document.addEventListener('DOMContentLoaded', createGridItems);
 /*----------[PO-2]-Visual Explorations Section------------*/
+/*----------[PO-12]-Personal Projects Section------------*/
+const projects = [
+    {
+        image: "assets/[PO-12]/image1.svg",
+    },
+    {
+        image: "assets/[PO-12]/image2.svg",
+    },
+    {
+        image: "assets/[PO-12]/image3.svg",
+    }
+];
+
+function createProjectCard(project, index) {
+    const card = document.createElement('div');
+    card.className = 'project-card';
+    card.style.animation = `fadeInUp 0.8s ease forwards ${index * 0.2}s`;
+
+    const img = document.createElement('img');
+    img.src = project.image;
+    img.alt = project.alt;
+
+    card.appendChild(img);
+    return card;
+}
+
+function loadProjects() {
+    const projectGrid = document.getElementById('projectGrid');
+    projects.forEach((project, index) => {
+        const card = createProjectCard(project, index);
+        projectGrid.appendChild(card);
+    });
+}
+
+document.addEventListener('DOMContentLoaded', loadProjects);
+/*----------[PO-12]-Personal Projects Section------------*/
