@@ -129,3 +129,30 @@ body {
     }
 }
 /*----------[PO-24]-Work-Html-Header-----------*/
+/*----------[PO-25]-Header-İmage-----------*/
+.header-image-container{
+    margin: 0 auto;
+}
+.header-image{
+    width: 1520px;
+    margin: 0 auto;
+    position: relative;
+    left: 10.4%;
+}
+@media(max-width:1440px){
+    .header-image-container{
+        display: flex;
+        align-items: flex-start;
+        padding-right: 140px;
+        position: relative;
+        left: -140px;
+
+    }
+}
+@media(max-width:680px){
+    .header-image-container{
+        max-width: 400px;
+        
+    }
+}
+/*----------[PO-25]-Header-İmage-----------*/

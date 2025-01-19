@@ -55,3 +55,5 @@ style.textContent = `
 `;
 document.head.appendChild(style);
 /*----------[PO-24]-Work-Html-Header-----------*/
+/*----------[PO-25]-Header-İmage-----------*/
+/*----------[PO-25]-Header-İmage-----------*/
