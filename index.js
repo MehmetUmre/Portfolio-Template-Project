@@ -166,3 +166,48 @@ function loadProjects() {
 
 document.addEventListener('DOMContentLoaded', loadProjects);
 /*----------[PO-12]-Personal Projects Section------------*/
+/*----------[PO-13]-Contact Component-----------*/
+const dataContact = {
+    title: "Contact Me",
+    description1: "If you are looking to hire a product designer,",
+    description2: "I'm currently available for freelance work",
+    email: "hi@yourname.com"
+};
+
+const contentDiv = document.getElementById("content");
+
+
+const title = document.createElement("h1");
+title.textContent = dataContact.title;
+title.classList.add("main-title", "fade-in");
+contentDiv.appendChild(title);
+
+
+const description1 = document.createElement("p");
+description1.textContent = dataContact.description1;
+description1.classList.add("description-text", "fade-in");
+description1.style.animationDelay = "0.2s";
+contentDiv.appendChild(description1);
+
+
+const description2 = document.createElement("p");
+description2.textContent = dataContact.description2;
+description2.classList.add("description-text", "fade-in");
+description2.style.animationDelay = "0.4s";
+contentDiv.appendChild(description2);
+
+
+const emailButton = document.createElement("a");
+emailButton.href = `mailto:${dataContact.email}`;
+emailButton.className = "email-button fade-in";
+emailButton.style.animationDelay = "0.6s";
+
+const emailIcon = document.createElement("i");
+emailIcon.className = "far fa-envelope";
+emailButton.appendChild(emailIcon);
+
+const emailText = document.createTextNode(` ${dataContact.email}`);
+emailButton.appendChild(emailText);
+
+contentDiv.appendChild(emailButton);
+/*----------[PO-13]-Contact Component-----------*/
