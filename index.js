@@ -211,3 +211,39 @@ emailButton.appendChild(emailText);
 
 contentDiv.appendChild(emailButton);
 /*----------[PO-13]-Contact Component-----------*/
+/*----------[PO-14]-Footer Section-----------*/
+function animateCopyright() {
+    const copyrightEl = document.getElementById('copyright');
+    const currentYear = new Date().getFullYear();
+    const text = `Made by <span class="highlight">Your Name</span> — Copyright ${currentYear}`;
+    let index = 0;
+
+    copyrightEl.style.opacity = '1';
+    copyrightEl.style.transform = 'translateY(0)';
+
+    function typeWriter() {
+        if (index < text.length) {
+            copyrightEl.innerHTML = text.substring(0, index + 1);
+            index++;
+            setTimeout(typeWriter, 50); 
+        }
+    }
+
+    setTimeout(typeWriter, 500); 
+}
+
+function animateSocialIcons() {
+    const icons = document.querySelectorAll('.social-icons a');
+    icons.forEach((icon, index) => {
+        setTimeout(() => {
+            icon.style.opacity = '1';
+            icon.style.transform = 'translateY(0)';
+        }, index * 200); 
+    });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    animateCopyright();
+    animateSocialIcons();
+});
+/*----------[PO-14]-Footer Section-----------*/
