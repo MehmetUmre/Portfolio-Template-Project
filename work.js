@@ -124,3 +124,33 @@ const data = {
     }, 500);
   });
 /*----------[PO-8]-Prototype-Section-----------*/
+/*----------[PO-1]-Solution Component-----------*/
+const solutionData = {
+    image: "https://replicate.delivery/xezq/Lwb2RdNDX5Z1HpsqOjGZAoHtZf7vNS8eO9BPaYUkXtgMhxGUA/out-0.png",
+    label: "SOLUTION 1",
+    title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+};
+
+function populateContent() {
+    document.getElementById('solutionImage').src = solutionData.image;
+    document.getElementById('solutionLabel').textContent = solutionData.label;
+    document.getElementById('solutionTitle').textContent = solutionData.title;
+}
+
+function animateContent() {
+    setTimeout(() => {
+        document.getElementById('visualComponent').style.opacity = '1';
+        document.getElementById('visualComponent').style.transform = 'translateX(0)';
+    }, 100);
+
+    setTimeout(() => {
+        document.getElementById('contentSection').style.opacity = '1';
+        document.getElementById('contentSection').style.transform = 'translateY(0)';
+    }, 600);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    populateContent();
+    animateContent();
+});
+/*----------[PO-1]-Solution Component-----------*/
