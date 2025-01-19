@@ -284,12 +284,14 @@ body {
     margin: 0 auto;
 }
 .featured-work-section{
-    padding-left: 40px ;
+    padding-left: 130px ;
 }
 @media (max-width: 768px){
     .featured-work-section{
         max-width: 590px;
         margin: 0 auto;
+        position: relative;
+        right: 100px;
     }
 }
 @media (max-width: 480px){
@@ -301,3 +303,73 @@ body {
 
 
 /*----------[PO-3]-Featured Work Section------------*/
+/*----------[PO-2]-Visual Explorations Section------------*/
+.gallery-title {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #DEDEDE;
+    font-family: "Manrope", serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.5px;
+}
+.visual-explorations-container{
+    background: #202020;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.grid-item {
+    position: relative;
+    aspect-ratio: 1;
+    overflow: hidden;
+    border-radius: 12px;
+    background-color: #2a2a2a;
+    opacity: 0;
+    transform: scale(0.9);
+    animation: fadeInScale 0.5s forwards;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.grid-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.grid-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.grid-item:hover img {
+    transform: scale(1.05);
+}
+
+@keyframes fadeInDown {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInScale {
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+/*----------[PO-2]-Visual Explorations Section------------*/
