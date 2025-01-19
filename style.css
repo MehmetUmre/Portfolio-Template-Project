@@ -13,7 +13,7 @@ body {
     justify-content: space-between;
     align-items: center;
     transition: all 0.3s ease;
-    width: 1440px;
+    max-width: 1440px;
     height: 60px; 
     margin: 0 auto;
 }
@@ -129,3 +129,152 @@ body {
     }
 }
 /*----------[PO-9]-Header-Components------------*/
+/*----------[PO-11]-Hero Section------------*/
+.portfolio-container {
+    font-family: 'Inter', sans-serif;
+    background: #202020;
+    color: white;
+    padding: 40px;
+    display: flex;
+    margin: 0 auto;
+    max-width: 1440px;
+    justify-content: space-between;
+}
+
+.portfolio-content {
+    max-width: 600px;
+}
+
+.portfolio-heading {
+    margin-bottom: 10px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
+    width: 521px;
+    color: #DEDEDE;
+    font-family: "Manrope", serif;
+    font-size: 54px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 70px; 
+    letter-spacing: -0.5px;
+}
+
+.portfolio-description {
+    margin: 20px 0;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
+    width: 411px;
+    color: #959595;
+    font-family: "Manrope", serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 36px; 
+    letter-spacing: -0.5px;
+}
+
+.contact-button {
+    display: inline-flex;
+    text-decoration: none;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s, background-color 0.3s;
+    display: flex;
+    padding: 16px 48px;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    border-radius: 4px;
+    background: #9D9D9D;
+    color: #FFF;
+    font-family: "Manrope", serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    width: 198px;
+    height: 25px;
+}
+
+.contact-button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.contact-button i {
+    margin-right: 2px;
+}
+
+.profile-picture {
+    border-radius: 50%;
+    overflow: hidden;
+    opacity: 0;
+    transform: scale(0.9);
+    transition: opacity 0.5s, transform 0.5s;
+    width: 400px;
+    height: 400px;
+}
+
+.profile-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .portfolio-container {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .portfolio-content {
+        margin-top: 40px;
+        margin: 0 auto;
+    }
+
+    .portfolio-heading {
+        font-size: 36px;
+    }
+    .portfolio-description {
+        margin: 0 auto;
+    }
+
+    .profile-picture {
+        width: 200px;
+        height: 200px;
+        margin-bottom: 20px;
+        margin: 0 auto;
+    }
+    .contact-button {
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .portfolio-container {
+        padding: 20px;
+    }
+
+    .portfolio-heading {
+        font-size: 28px;
+        width: 321px;
+    }
+
+    .portfolio-description {
+        font-size: 15px;
+        width: 321px;
+    }
+
+    .contact-button {
+        font-size: 14px;
+        margin: 0 auto;
+        padding: 10px 20px;
+    }
+    .profile-picture {
+        margin: 0 auto;
+    }
+}
+
+/*----------[PO-11]-Hero Section------------*/
