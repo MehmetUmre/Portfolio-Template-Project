@@ -1,7 +1,7 @@
 /*----------[PO-9]-Header-Components------------*/
 const navData = [
-    { name: 'Home', url: '#' },
-    { name: 'Work', url: '#' },
+    { name: 'Home', url: 'index.html' },
+    { name: 'Work', url: 'work.html' },
     { name: 'Contact', url: '#' }
 ];
 
