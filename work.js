@@ -158,7 +158,7 @@ document.addEventListener('DOMContentLoaded', () => {
 const cosmicData = {
     title: "SOLUTION 1",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-    imageUrl: "https://replicate.delivery/xezq/Vv9Xypu4eUx9OqZBg4De0ILMq9QgCjJ37mpVftZm7df0WLcQB/out-0.png",
+    imageUrl: "assets/[PO-26]/Rectangle 11.svg",
     imageAlt: "Four 3D cubes arranged in a 2x2 grid, the top two cubes are light blue, the bottom left cube is light gray, and the bottom right cube is light blue, all on a white surface with a slight reflection",
    };
 
@@ -194,4 +194,43 @@ const cosmicData = {
    stellarWrapper.appendChild(orbitImage);
 
    galaxyContainer.appendChild(stellarWrapper);
-/*----------[PO-26]-Solution Component-2-----------*/
+   /*----------[PO-26]-Solution Component-2-----------*/
+   /*----------[PO-6]-Conclusion Section-----------*/
+   /*----------[PO-6]-Conclusion Section-----------*/
+   /*----------[PO-14]-Footer Section-----------*/
+function animateCopyright() {
+    const copyrightEl = document.getElementById('copyright');
+    const currentYear = new Date().getFullYear();
+    const text = `Made by <span class="highlight">Your Name</span> — Copyright ${currentYear}`;
+    let index = 0;
+
+    copyrightEl.style.opacity = '1';
+    copyrightEl.style.transform = 'translateY(0)';
+
+    function typeWriter() {
+        if (index < text.length) {
+            copyrightEl.innerHTML = text.substring(0, index + 1);
+            index++;
+            setTimeout(typeWriter, 50); 
+        }
+    }
+
+    setTimeout(typeWriter, 500); 
+}
+
+function animateSocialIcons() {
+    const icons = document.querySelectorAll('.social-icons a');
+    icons.forEach((icon, index) => {
+        setTimeout(() => {
+            icon.style.opacity = '1';
+            icon.style.transform = 'translateY(0)';
+        }, index * 200); 
+    });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    animateCopyright();
+    animateSocialIcons();
+});
+/*----------[PO-14]-Footer Section-----------*/
+   
