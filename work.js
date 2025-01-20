@@ -158,7 +158,7 @@ document.addEventListener('DOMContentLoaded', () => {
 const cosmicData = {
     title: "SOLUTION 1",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-    imageUrl: "https://replicate.delivery/xezq/Vv9Xypu4eUx9OqZBg4De0ILMq9QgCjJ37mpVftZm7df0WLcQB/out-0.png",
+    imageUrl: "assets/[PO-26]/Rectangle 11.svg",
     imageAlt: "Four 3D cubes arranged in a 2x2 grid, the top two cubes are light blue, the bottom left cube is light gray, and the bottom right cube is light blue, all on a white surface with a slight reflection",
    };
 
