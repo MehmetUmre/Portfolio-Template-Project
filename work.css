@@ -138,6 +138,7 @@ body {
     margin: 0 auto;
     position: relative;
     left: 10.1%;
+    
 }
 @media(max-width:1440px){
     .header-image-container{
@@ -146,15 +147,16 @@ body {
         padding-right: 140px;
         position: relative;
         left: -140px;
+        position: fixed;
 
     }
 }
 @media(max-width:680px){
-    .header-image-container{
-        max-width: 400px;
-        
+    .header-image{
+        width: 144%;
     }
 }
+
 /*----------[PO-25]-Header-İmage-----------*/
 /*----------[PO-5]-Problem-Statement-Component-and-Covibe-Component-----------*/
 
@@ -280,7 +282,7 @@ body {
     margin: 0 auto;
     position: relative;
     bottom: 4px;
-    min-height: 100vh;
+    
   }
   .content-container {
     margin: 0 auto;
@@ -355,6 +357,7 @@ body {
     display: flex;
     margin: 0 auto;
     box-sizing: border-box;
+    
 }
 
 .visual-component {
@@ -372,13 +375,13 @@ body {
 }
 
 .content-section {
-    flex: 1;
+    flex: 1 ;
     color: white;
     padding-left: 20px;
     opacity: 0;
     transform: translateY(50px);
     transition: opacity 1s ease, transform 1s ease;
-    margin-top: 130px;
+    margin-top: 290px;
 }
 
 .solution-identifier {
@@ -407,10 +410,6 @@ body {
 }
 
 @media (max-width: 768px) {
-    .page-container{
-        position: relative;
-        bottom: 240px;
-    }
     .layout-container {
         flex-direction: column;
     }
@@ -421,6 +420,7 @@ body {
 
     .content-section {
         padding-left: 0;
+        font-size: 24px;
     }
 
     .solution-description {
@@ -428,3 +428,108 @@ body {
     }
 }
 /*----------[PO-1]-Solution Component-----------*/
+/*----------[PO-26]-Solution Component-2-----------*/
+.galaxy-container {
+    background: #202020;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 40px;
+    position: relative;
+    bottom: 5px;
+   }
+
+   .stellar-wrapper {
+    display: flex;
+    animation: cosmicFadeIn 1.5s ease-in-out;
+   }
+
+   .nebula-text {
+    flex: 1;
+    padding: 20px;
+   }
+
+   .orbit-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+
+   .orbit-image img {
+    animation: meteorSlideIn 1.5s ease-in-out;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+   }
+
+   .cosmic-title {
+    margin-bottom: 10px;
+    color: #DEDEDE;
+    font-family: "Manrope", serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px; 
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    opacity: 0.7;
+   }
+
+   .galactic-description {
+    margin: 0;
+    margin: 0;
+    color: #FFF;
+    font-family: "Manrope", serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 54px; 
+    letter-spacing: -0.5px;
+   }
+
+   @keyframes cosmicFadeIn {
+    from {
+     opacity: 0;
+    }
+    to {
+     opacity: 1;
+    }
+   }
+
+   @keyframes meteorSlideIn {
+    from {
+     transform: translateX(100%);
+    }
+    to {
+     transform: translateX(0);
+    }
+   }
+   @media (max-width: 768px) {
+    .stellar-wrapper {
+      flex-direction: column;
+      position: relative;
+      right: 17px;
+    }
+
+    .cosmic-title {
+      font-size: 24px;
+      padding-left: 0;
+    }
+
+    .galactic-description {
+        font-size: 24px;
+        padding-left: 0;
+    }
+
+    .orbit-image img {
+      display: none;
+    }
+   }
+
+
+/*----------[PO-26]-Solution Component-2-----------*/

@@ -126,7 +126,7 @@ const data = {
 /*----------[PO-8]-Prototype-Section-----------*/
 /*----------[PO-1]-Solution Component-----------*/
 const solutionData = {
-    image: "https://replicate.delivery/xezq/Lwb2RdNDX5Z1HpsqOjGZAoHtZf7vNS8eO9BPaYUkXtgMhxGUA/out-0.png",
+    image: "assets/[PO-1]/Rectangle 9.svg",
     label: "SOLUTION 1",
     title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
 };
@@ -154,3 +154,44 @@ document.addEventListener('DOMContentLoaded', () => {
     animateContent();
 });
 /*----------[PO-1]-Solution Component-----------*/
+/*----------[PO-26]-Solution Component-2-----------*/
+const cosmicData = {
+    title: "SOLUTION 1",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+    imageUrl: "https://replicate.delivery/xezq/Vv9Xypu4eUx9OqZBg4De0ILMq9QgCjJ37mpVftZm7df0WLcQB/out-0.png",
+    imageAlt: "Four 3D cubes arranged in a 2x2 grid, the top two cubes are light blue, the bottom left cube is light gray, and the bottom right cube is light blue, all on a white surface with a slight reflection",
+   };
+
+   const galaxyContainer = document.querySelector(".galaxy-container");
+
+   const stellarWrapper = document.createElement("div");
+   stellarWrapper.className = "stellar-wrapper";
+
+   const nebulaText = document.createElement("div");
+   nebulaText.className = "nebula-text";
+
+   const cosmicTitle = document.createElement("h2");
+   cosmicTitle.className = "cosmic-title";
+   cosmicTitle.textContent = cosmicData.title;
+
+   const galacticDescription = document.createElement("p");
+   galacticDescription.className = "galactic-description";
+   galacticDescription.textContent = cosmicData.description;
+
+   nebulaText.appendChild(cosmicTitle);
+   nebulaText.appendChild(galacticDescription);
+
+   const orbitImage = document.createElement("div");
+   orbitImage.className = "orbit-image";
+
+   const image = document.createElement("img");
+   image.src = cosmicData.imageUrl;
+   image.alt = cosmicData.imageAlt;
+
+   orbitImage.appendChild(image);
+
+   stellarWrapper.appendChild(nebulaText);
+   stellarWrapper.appendChild(orbitImage);
+
+   galaxyContainer.appendChild(stellarWrapper);
+/*----------[PO-26]-Solution Component-2-----------*/
